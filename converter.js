@@ -1,3 +1,6 @@
+var userTemp = document.getElementById("userTemp");
+
+
 function toCelsius (yourTemp) {
 	return (yourTemp - 32);
 }
@@ -12,6 +15,7 @@ var button = document.getElementById("converter");
 // This function should determine which conversion should
 // happen based on which radio button is selected.
 function determineConverter (clickEvent) {
+	
   console.log("event", clickEvent);
 }
 
@@ -19,4 +23,3 @@ function determineConverter (clickEvent) {
 button.addEventListener("click", determineConverter);
 
 
-console.log(toCelsius(32));
