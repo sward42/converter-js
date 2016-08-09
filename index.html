@@ -4,25 +4,27 @@
 	<title>Converter</title>
 </head>
 <body>
+
+<div>
 <h1>Temperature Converter</h1>
 
-<label name="temp">Enter Temperature:</label>
-<input type="text" name="temp" id="userTemp">
-<br>
+
+	<label name="temp">Enter Temperature:</label>
+	<input type="text" name="temp" id="userTemp">
+	<br>
 
 
-<div>
-<input type="radio" name="tempType" value="Fahrenheit">Fahrenheit<br>
-<input type="radio" name="tempType" value="Celsius">Celsius<br>
-</div> 
 
-<div>
-<button type="submit" id="converter">Click for Converted Temperature</button>
-<button type="submit">Click to Clear</button>
-</div>
-<div>
+	<input type="radio" name="tempType" value="Fahrenheit" id="farBut">Fahrenheit<br>
+	<input type="radio" name="tempType" value="Celsius" id="celBut">Celsius<br>
+
+	<button type="submit" id="converter">Click for Converted Temperature</button>
+
+
 	<label name="convertedTemp">Converted Temperature</label>
-	<textarea id="output" name="convertedTemp"></textarea>
+	<input type="text" id="output" name="convertedTemp">
+
+	<button type="submit">Click to Clear</button>
 </div>
 
 <script type="text/javascript" src="converter.js"></script>
